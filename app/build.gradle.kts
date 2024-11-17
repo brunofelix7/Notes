@@ -44,10 +44,7 @@ android {
 
     buildFeatures {
         compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        buildConfig = true
     }
 
     packaging {
@@ -58,11 +55,14 @@ android {
 }
 
 dependencies {
-    // Kotlin Core
+    // Android Core
     implementation(libs.androidx.core.ktx)
 
     // Material 3
     implementation(libs.material3)
+
+    // App Compat
+    implementation(libs.androidx.appcompat)
 
     // Coil
     implementation(libs.coil.compose)
@@ -92,7 +92,7 @@ dependencies {
     implementation(libs.accompanist.flowlayout)
     implementation(libs.androidx.navigation.compose)
 
-    // Paging3
+    // Paging
     implementation(libs.androidx.paging.runtime.ktx)
     implementation(libs.androidx.paging.compose)
 
@@ -112,12 +112,6 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
-
-    // Serialization JSON
-    implementation(libs.kotlinx.serialization.json)
-
-    // App Compat
-    implementation(libs.androidx.appcompat)
 
     // Tests
     testImplementation(libs.junit)

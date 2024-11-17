@@ -1,4 +1,4 @@
-package dev.brunofelix.notes
+package dev.brunofelix.notes.core.presentation.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,8 +10,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
-import dev.brunofelix.notes.ui.theme.NotesTheme
+import dagger.hilt.android.AndroidEntryPoint
+import dev.brunofelix.notes.core.presentation.ui.theme.NotesTheme
+import dev.brunofelix.notes.core.presentation.ui.theme.Typography
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,9 +25,14 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
                     Column(
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier
+                            .padding(innerPadding)
+                            .fillMaxSize()
                     ) {
-                        Text(text = "Notes")
+                        Text(
+                            text = "Notes",
+                            style = Typography.regular.body1
+                        )
                     }
                 }
             }
