@@ -9,21 +9,52 @@ import dev.brunofelix.notes.R
 
 object Regular {
 
+    val titleLarge = TextStyle(
+        fontFamily = FontFamily(Font(R.font.klee_one_regular)),
+        fontWeight = FontWeight(400),
+        lineHeight = 28.sp,
+        fontSize = 28.sp
+    )
+
+    val titleMedium = TextStyle(
+        fontFamily = FontFamily(Font(R.font.klee_one_regular)),
+        fontWeight = FontWeight(400),
+        lineHeight = 28.sp,
+        fontSize = 20.sp
+    )
+
+    val titleSmall = TextStyle(
+        fontFamily = FontFamily(Font(R.font.klee_one_regular)),
+        fontWeight = FontWeight(400),
+        lineHeight = 28.sp,
+        fontSize = 18.sp
+    )
+
     val body1 = TextStyle(
         fontFamily = FontFamily(Font(R.font.klee_one_regular)),
         fontWeight = FontWeight(400),
+        lineHeight = 20.sp,
         fontSize = 18.sp
     )
 
     val body2 = TextStyle(
         fontFamily = FontFamily(Font(R.font.klee_one_regular)),
         fontWeight = FontWeight(400),
+        lineHeight = 20.sp,
         fontSize = 16.sp
     )
 
     val body3 = TextStyle(
         fontFamily = FontFamily(Font(R.font.klee_one_regular)),
         fontWeight = FontWeight(400),
+        lineHeight = 20.sp,
         fontSize = 14.sp
+    )
+
+    val caption = TextStyle(
+        fontFamily = FontFamily(Font(R.font.klee_one_regular)),
+        fontWeight = FontWeight(400),
+        lineHeight = 20.sp,
+        fontSize = 10.sp
     )
 }
