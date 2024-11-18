@@ -8,7 +8,7 @@ object Colors {
     val Purple = Color(0xFF4F378B)
     val Blue = Color(0xFF047db7)
     val Green = Color(0xFF518242)
-    val Yellow = Color(0xFF91732F)
+    val Gold = Color(0xFF91732F)
     val Orange = Color(0xFFFF5449)
     val Red = Color(0xFFD32F2F)
     val Black = Color(0xFF000000)
