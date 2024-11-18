@@ -18,7 +18,7 @@ class NoteRepositoryImpl @Inject constructor(
     override suspend fun getById(id: Long) = dao.getById(id)?.toNote()
 
     override fun getAll() = dao.getAll().map { entityList ->
-        entityList.map { entity ->
+        entityList?.map { entity ->
             entity.toNote()
         }
     }
